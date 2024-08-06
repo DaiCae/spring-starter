@@ -1,0 +1,10 @@
+services:
+  spring-starter:
+    image: spring-starter:latest
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: spring-starter
+    ports:
+      - 8080:8080
+    restart: always
